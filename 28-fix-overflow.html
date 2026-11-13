@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fix Overflow</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            padding: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .box {
+            width: 100%;
+            box-sizing: border-box;
+            background-color: lightblue;
+            padding: 20px;
+            border: 3px solid navy;
+            margin-bottom: 20px;
+            overflow-wrap: break-word;
+        }
+
+        .scroll-box {
+            height: 100px;
+            overflow: auto;
+            background-color: #d5f5e3;
+            padding: 15px;
+            border: 2px solid green;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Fixing CSS Overflow</h1>
+
+    <div class="container">
+
+        <div class="box">
+            <h2>Responsive Box</h2>
+            <p>This box adjusts according to its available width without overflowing.</p>
+        </div>
+
+        <div class="box">
+            <h2>Long Text Example</h2>
+            <p>
+                ThisIsAVeryLongWordThatCouldCauseOverflow
+                but overflow-wrap helps it fit inside the box.
+            </p>
+        </div>
+
+        <div class="scroll-box">
+            <h2>Scrollable Content</h2>
+            <p>
+                This is an example of content inside a fixed-height box.
+                When the content becomes larger than the box,
+                a scrollbar appears so users can read everything.
+            </p>
+            <p>CSS overflow property controls extra content.</p>
+        </div>
+
+    </div>
+
+</body>
+</html>

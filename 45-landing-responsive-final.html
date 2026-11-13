@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Landing Page</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f4f6f9;
+        }
+
+        /* Header */
+        header {
+            background-color: #243b55;
+            color: white;
+            padding: 20px 8%;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+            padding: 70px 8%;
+            background-color: #dce8f5;
+        }
+
+        .hero-content {
+            flex: 1;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            color: #243b55;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .hero img {
+            width: 45%;
+            max-width: 450px;
+            border-radius: 12px;
+        }
+
+        button {
+            background-color: #243b55;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Services */
+        .services {
+            padding: 50px 8%;
+            text-align: center;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px #ddd;
+        }
+
+        .card h3 {
+            color: #243b55;
+            margin-bottom: 12px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #243b55;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Tablet */
+        @media (max-width: 900px) {
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .service-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* Mobile */
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
+
+            .hero {
+                flex-direction: column;
+                text-align: center;
+                padding: 40px 6%;
+            }
+
+            .hero h1 {
+                font-size: 28px;
+            }
+
+            .hero img {
+                width: 100%;
+            }
+
+            .service-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <h2>MyWebsite</h2>
+
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Our Website</h1>
+
+            <p>
+                Explore our services, learn new skills and
+                discover opportunities for a better future.
+            </p>
+
+            <button>Get Started</button>
+        </div>
+
+        <img
+            src="https://placehold.co/450x300"
+            alt="Website landing page illustration">
+    </section>
+
+    <section class="services">
+        <h2>Our Services</h2>
+
+        <div class="service-grid">
+
+            <div class="card">
+                <h3>Web Design</h3>
+                <p>Creative and modern website designs.</p>
+            </div>
+
+            <div class="card">
+                <h3>Development</h3>
+                <p>Useful and effective digital solutions.</p>
+            </div>
+
+            <div class="card">
+                <h3>Support</h3>
+                <p>Reliable assistance whenever required.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 MyWebsite. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .box {
+            width: 250px;
+            background-color: lightblue;
+
+            /* Space inside the border */
+            padding: 30px;
+
+            /* Border around the padding and content */
+            border: 5px solid navy;
+
+            /* Space outside the border */
+            margin: 40px auto;
+        }
+
+        h2 {
+            color: navy;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Box Model</h1>
+    <p>Every HTML element is treated as a rectangular box.</p>
+
+    <div class="box">
+        <h2>Content</h2>
+        <p>This is the content area of the box.</p>
+    </div>
+
+    <h3>Box Model Properties</h3>
+    <p><b>Content:</b> The actual text or image.</p>
+    <p><b>Padding:</b> Space between content and border.</p>
+    <p><b>Border:</b> A line surrounding the padding and content.</p>
+    <p><b>Margin:</b> Space outside the border.</p>
+
+</body>
+</html>

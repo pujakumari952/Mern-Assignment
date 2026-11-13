@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid and Flex Landing Page</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f6f9;
+        }
+
+        /* Navbar using Flexbox */
+        header {
+            background-color: #243b55;
+            color: white;
+            padding: 18px 8%;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Hero section using Flexbox */
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+            padding: 70px 8%;
+            background-color: #dce8f5;
+        }
+
+        .hero-content {
+            max-width: 500px;
+        }
+
+        .hero h1 {
+            font-size: 38px;
+            color: #243b55;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            margin-bottom: 20px;
+        }
+
+        .hero img {
+            width: 40%;
+            max-width: 400px;
+            border-radius: 12px;
+        }
+
+        button {
+            background-color: #243b55;
+            color: white;
+            border: none;
+            padding: 12px 22px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Features using CSS Grid */
+        .features {
+            padding: 50px 8%;
+            text-align: center;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 25px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px #ddd;
+        }
+
+        footer {
+            background-color: #243b55;
+            color: white;
+            text-align: center;
+            padding: 18px;
+            margin-top: 30px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero img {
+                width: 90%;
+            }
+
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <h2>MyWebsite</h2>
+
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Build Your Future With Us</h1>
+            <p>
+                Explore new opportunities, learn useful skills
+                and take the next step towards success.
+            </p>
+            <button>Get Started</button>
+        </div>
+
+        <img src="https://placehold.co/400x280" alt="Landing page illustration">
+    </section>
+
+    <section class="features">
+        <h2>Our Features</h2>
+
+        <div class="feature-grid">
+            <div class="card">
+                <h3>Easy Learning</h3>
+                <p>Learn new skills with simple resources.</p>
+            </div>
+
+            <div class="card">
+                <h3>Expert Support</h3>
+                <p>Get guidance whenever you need it.</p>
+            </div>
+
+            <div class="card">
+                <h3>Career Growth</h3>
+                <p>Develop skills for better opportunities.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 MyWebsite. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

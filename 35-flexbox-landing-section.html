@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Landing Section</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f7fa;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: #2c3e50;
+        }
+
+        .logo {
+            color: white;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .navbar ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Landing Section */
+        .landing {
+            min-height: 500px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 50px;
+            gap: 30px;
+        }
+
+        .content {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .content h1 {
+            font-size: 40px;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            color: #555;
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        button {
+            background-color: #3498db;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .landing img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 12px;
+        }
+
+        @media (max-width: 600px) {
+            .navbar {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .landing {
+                flex-direction: column;
+                text-align: center;
+                padding: 30px;
+            }
+
+            .content h1 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">MyWebsite</div>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="landing" id="home">
+
+        <div class="content">
+            <h1>Build Your Future With Us</h1>
+
+            <p>
+                Explore new opportunities, develop your skills,
+                and achieve your goals with our learning platform.
+            </p>
+
+            <button>Explore More</button>
+        </div>
+
+        <div>
+            <img src="https://placehold.co/400x300?text=Welcome"
+                 alt="Welcome landing page illustration">
+        </div>
+
+    </section>
+
+</body>
+</html>

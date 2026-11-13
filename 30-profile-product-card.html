@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile and Product Cards</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .card {
+            width: 260px;
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .profile-card img {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #2c3e50;
+        }
+
+        p {
+            color: #666;
+        }
+
+        .price {
+            color: green;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #21618c;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Profile and Product Cards</h1>
+
+    <div class="container">
+
+        <!-- Profile Card -->
+        <div class="card profile-card">
+            <img src="https://placehold.co/150x150" alt="Profile photo">
+
+            <h2>Priya Yadav</h2>
+            <p>B.Com (Hons.) Student</p>
+            <p>Invertis University, Bareilly</p>
+
+            <button>View Profile</button>
+        </div>
+
+        <!-- Product Card -->
+        <div class="card product-card">
+            <img src="https://placehold.co/300x200" alt="Product image">
+
+            <h2>Smart Watch</h2>
+            <p>Stylish smartwatch with useful features.</p>
+            <p class="price">₹1,499</p>
+
+            <button>Buy Now</button>
+        </div>
+
+    </div>
+
+</body>
+</html>

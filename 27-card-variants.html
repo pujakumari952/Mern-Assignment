@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Variants</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            width: 250px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .basic {
+            border: 2px solid #3498db;
+        }
+
+        .featured {
+            border-top: 6px solid #e67e22;
+        }
+
+        .profile {
+            background-color: #e8f6f3;
+        }
+
+        .card h2 {
+            color: #2c3e50;
+        }
+
+        .card p {
+            color: #555;
+            line-height: 1.5;
+        }
+
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 18px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #21618c;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Different Card Variants</h1>
+
+    <div class="container">
+
+        <div class="card basic">
+            <h2>Basic Card</h2>
+            <p>This is a simple card design with a blue border.</p>
+            <button>Read More</button>
+        </div>
+
+        <div class="card featured">
+            <h2>Featured Card</h2>
+            <p>This card has a special orange top border to highlight it.</p>
+            <button>Explore</button>
+        </div>
+
+        <div class="card profile">
+            <h2>Profile Card</h2>
+            <p>Name: Priya Yadav</p>
+            <p>Course: B.Com (Hons.)</p>
+            <button>View Profile</button>
+        </div>
+
+    </div>
+
+</body>
+</html>
